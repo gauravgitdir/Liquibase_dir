@@ -1,0 +1,14 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="5" author="Test">
+        
+  <sql>
+            UPDATE person SET age = 30 WHERE id = 1;
+            UPDATE person SET age = 35 WHERE id = 2;
+            -- Add more UPDATE statements for other records if needed
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
